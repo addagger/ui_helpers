@@ -1,0 +1,34 @@
+// Place all the styles related to the button controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//  CSS Preudoclasses:
+//
+//  :link  a:link  Selects all unvisited links
+//  :visited  a:visited  Selects all visited links
+//  :active  a:active  Selects the active link
+//  :hover  a:hover  Selects links on mouse over
+//  :focus  input:focus  Selects the input element which has focus
+//  :first-letter  p:first-letter  Selects the first letter of every <p> element
+//  :first-line  p:first-line  Selects the first line of every <p> element
+//  :first-child  p:first-child  Selects every <p> elements that is the first child of its parent
+//  :before  p:before  Insert content before every <p> element
+//  :after  p:after  Insert content after every <p> element
+//  :lang(language)  p:lang(it)  Selects every <p> element with a lang attribute value starting with "it"
+
+.ui-button {
+  &:hover {
+    // inherits .ui-state-hover;
+    border: 1px solid #0073ea; background: #0073ea url(flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff;
+    .ui-icon {
+      background-image: url(flick/images/ui-icons_ffffff_256x240.png);
+    }
+  }
+  &:active {
+    // inherits .ui-state-active;
+    border: 1px solid #dddddd; background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #ff0084;
+    .ui-icon {
+      background-image: url(flick/images/ui-icons_454545_256x240.png);
+    }
+  }
+}
